@@ -27,7 +27,7 @@ namespace NexmoDotNetQuickStarts.Controllers
             public ActionResult Send(string to, string text)
             {
 
-            var results = SMS.Send(new SMS.SMSRequest
+                var results = SMS.Send(new SMS.SMSRequest
                 {
 
                     from = Configuration.Instance.Settings["appsettings:NEXMO_FROM_NUMBER"],
