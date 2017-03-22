@@ -2,8 +2,7 @@
 The purpose of the quickstart guide is to provide simple examples focused on one goal. For example, sending an SMS, handling an incoming SMS webhook or making a Text to Speech call.
 
 # Configure with Your Nexmo Credentials 
-To use this sample you will first need a Nexmo account. Once you have your own API credentials, replace API_KEY, API_SECRET, APP-ID, NEXMO_FROM_NUMBER, and private.key file location in 'appsettings.json'
-
+To use this sample you will first need a Nexmo account. Once you have your own API credentials, replace API_KEY, API_SECRET, and NEXMO_FROM_NUMBER in 'appsettings.json'
 
 Run the app.
 
