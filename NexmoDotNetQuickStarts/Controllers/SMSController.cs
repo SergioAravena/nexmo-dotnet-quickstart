@@ -36,6 +36,21 @@ namespace NexmoDotNetQuickStarts.Controllers
                 });
                 return View("Index");
             }
+
+            [System.Web.Mvc.HttpGet]
+            public ActionResult DLR([FromUri]SMS.SMSDeliveryReceipt response)
+            {
+
+                Debug.WriteLine("-------------------------------------------------------------------------");
+                Debug.WriteLine("DELIVERY RECIEPT");
+                Debug.WriteLine("Message ID: " + response.messageId);
+                Debug.WriteLine("From: " + response.msisdn);
+                Debug.WriteLine("To: " + response.to);
+                Debug.WriteLine("Status: " + response.status);
+                Debug.WriteLine("-------------------------------------------------------------------------");
+
+                return new HttpStatusCodeResult(200);
+            }
     }
 
 }
